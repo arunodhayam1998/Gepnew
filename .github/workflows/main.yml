@@ -32,4 +32,8 @@ jobs:
           privateKey: ${{ secrets.UBUNT_GEP }}
       - name: Docker running   
         run: docker ps -a
+
+      - name: if condtion
+        if: ${{ secrets.UBUNT_GEP }} === down 
+      
        
