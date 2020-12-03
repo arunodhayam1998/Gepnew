@@ -30,5 +30,6 @@ jobs:
         uses: JimCronqvist/action-ssh@master
         with:
           privateKey: ${{ secrets.UBUNT_GEP }}
-      - run: docker ps -a
+      - name: siva sonnadhu    
+          run: docker ps -a
        
