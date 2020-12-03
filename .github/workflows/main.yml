@@ -31,5 +31,5 @@ jobs:
         with:
           hosts: 'user@domain.com'
           privateKey: ${{ secrets.UBUNT_GEP }}
-          command: ls -lah
+          command: docker ps -a
        
