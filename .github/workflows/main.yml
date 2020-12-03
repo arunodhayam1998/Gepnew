@@ -31,5 +31,5 @@ jobs:
         with:
           privateKey: ${{ secrets.UBUNT_GEP }}
       - name: siva sonnadhu    
-          run: docker ps -a
+        run: docker ps -a
        
