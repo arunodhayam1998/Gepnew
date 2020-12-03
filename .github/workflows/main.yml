@@ -35,5 +35,5 @@ jobs:
 
       - name: if condtion
         if: ${{ secrets.UBUNT_GEP }} === down 
-      
+        run: echo not running
        
