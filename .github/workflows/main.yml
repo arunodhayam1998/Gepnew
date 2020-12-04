@@ -34,6 +34,6 @@ jobs:
         run: docker ps -a
 
       - name: if condtion
-        if: http://ec2-34-197-46-177.compute-1.amazonaws.com/ === true
+       
         run: http://ec2-34-197-46-177.compute-1.amazonaws.com/
        
