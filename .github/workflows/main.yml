@@ -33,7 +33,9 @@ jobs:
       - name: Docker running   
         run: docker ps -a
 
-      - name: if condtion
+        
+
+      
        
-        run: http://ec2-34-197-46-177.compute-1.amazonaws.com/
+       
        
