@@ -61,9 +61,9 @@ jobs:
     steps:
       - name: Stop workflow
         needs: [build,build1,build2]
-        if: build == completed
+        if: build === completed && build1 === completed
         run:
-            build2
+            
 
       # step 3  
 
