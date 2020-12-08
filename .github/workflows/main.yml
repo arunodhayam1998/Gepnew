@@ -56,6 +56,15 @@ jobs:
           privateKey: ${{ secrets.UBUNT_GEP }}
       - name: Docker running   
         run: docker ps -a
+  stop action:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Stop workflow
+        needs: [build,build1,build2]
+        if: build == completed
+        run:
+            build2
+
       # step 3  
 
    
