@@ -60,9 +60,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Stop workflow
+      - uses: actions/checkout@v2
+      - uses: JimCronqvist/action-ssh@master
+        
         needs: [build,build1,build2]
         if: build === completed && build1 === completed
         run:
+          build2  
             
 
       # step 3  
