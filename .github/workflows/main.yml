@@ -23,7 +23,7 @@ jobs:
       - name: Execute SSH commmands on remote server
         uses: JimCronqvist/action-ssh@master
         with:
-          privateKey: ${{ secrets.XYZ_ABC }}
+          privateKey: ${{ secrets.UBUNTU_GEP }}
         
  
             
