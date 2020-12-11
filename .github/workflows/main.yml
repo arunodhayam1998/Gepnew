@@ -54,22 +54,11 @@ jobs:
         uses: JimCronqvist/action-ssh@master
         with:
           privateKey: ${{ secrets.UBUNT_GEP }}
-      - name: Docker running   
-        run: docker ps -a
-  stop action:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Stop workflow
-      - uses: actions/checkout@v2
-      - uses: JimCronqvist/action-ssh@master
-        
-        
-        if: build === completed && build1 === completed
-        run: |
-          build2  
+          command: docker ps -a
+ 
             
 
-      # step 3  
+      
 
    
         
