@@ -19,36 +19,6 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [ 10.x]
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node-version }}
-      - name: npm install and test
-        run: |
-          npm install
-    #step 1 
-  build1:
-    runs-on: ubuntu-latest
-    steps:       
-      - uses: JimCronqvist/action-ssh@master
-      - name: Cancel Previous Runs
-        uses: styfle/cancel-workflow-action@0.6.0
-        with:
-          access_token: ${{ github.token }}
-    #step 2      
-
-      # Runs a single command using the runners shell
-  build2: 
-    runs-on: ubuntu-latest
     steps: 
       - name: Execute SSH commmands on remote server
         uses: JimCronqvist/action-ssh@master
