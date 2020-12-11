@@ -24,7 +24,7 @@ jobs:
         uses: JimCronqvist/action-ssh@master
         with:
           privateKey: ${{ secrets.UBUNT_GEP }}
-          command: docker ps -a
+        
  
             
 
