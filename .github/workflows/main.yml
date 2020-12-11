@@ -23,7 +23,7 @@ jobs:
       - name: Login Ec2 instance
         uses: JimCronqvist/action-ssh@master
         with:
-          privateKey: ${{ secrets.UBUNTU_GEP }}
+          privateKey: ${{ secrets.AWS_SECRET }}
         
  
             
